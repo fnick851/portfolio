@@ -79,3 +79,24 @@ body {
 .social-icons .nes-badge {
   width: 95px;
 }
+
+@media (max-width: 510px) {
+  .social-icons {
+    display: block;
+  }
+  .social-icons .nes-badge {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .nes-container.member-card {
+    display: block;
+  }
+  .avatar {
+    margin-bottom: 10px;
+  }
+  .member-card > .profile {
+    margin-left: 0;
+  }
+}
