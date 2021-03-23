@@ -76,11 +76,20 @@ body {
   gap: 10px;
 }
 
-.social-icons .nes-badge {
-  width: 39px;
+.me {
+  display: flex;
+  gap: 5px;
 }
 
-@media (max-width: 510px) {
+.me .nes-badge {
+  width: 20px;
+}
+
+.me .nes-badge span {
+  font-size: 13px;
+}
+
+@media (max-width: 450px) {
   .social-icons {
     display: block;
   }
@@ -89,7 +98,7 @@ body {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .nes-container.member-card {
     display: block;
   }
