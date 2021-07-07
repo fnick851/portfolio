@@ -6,13 +6,18 @@ body {
   margin-bottom: 10px;
 }
 
+.nes-btn.is-primary {
+  color: black;
+}
+
 @font-face {
   font-family: "Zpix";
   src: url("../font/Zpix.ttf");
+  font-display: swap;
 }
 
 .chinese {
-  font-family: Zpix;
+  font-family: "Zpix";
 }
 
 .nes-container.member-card {
@@ -27,6 +32,7 @@ body {
 
 .head-photo {
   width: 140px;
+  height: 140px;
   image-rendering: pixelated;
 }
 

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-104425505-1"
@@ -22,16 +21,46 @@
       content='The portfolio page of Hanlun "Noah" Song.'
     />
     <title>(Noah) Hanlun Song - Portfolio</title>
-    <link rel="shortcut icon" href="../image/avatar.png" />
+    <link rel="shortcut icon" href="../img/head-sketch.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
-      rel="stylesheet"
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      as="style"
+      onLoad="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      />
+    </noscript>
+
     <link
+      rel="preload"
       href="https://unpkg.com/nes.css@latest/css/nes.min.css"
-      rel="stylesheet"
+      as="style"
+      onLoad="this.onload=null;this.rel='stylesheet'"
     />
-    <link rel="stylesheet" href="../css/portfolio.css" />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/nes.css@latest/css/nes.min.css"
+      />
+    </noscript>
+
+    <link
+      rel="preload"
+      href="../css/portfolio.css"
+      as="style"
+      onLoad="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="../css/portfolio.css" />
+    </noscript>
+
     <link rel="icon" href="./img/head-sketch.png" />
   </head>
 
@@ -39,7 +68,7 @@
     <div class="container">
       <section class="nes-container is-dark is-rounded member-card">
         <div class="avatar">
-          <a>
+          <a href="https://www.noah-song.com/">
             <img
               alt="Hanlun Song"
               class="head-photo"
@@ -54,7 +83,7 @@
             <h2 class="chinese">宋汉仑</h2>
             <!-- <a
               href='./Hanlun_"Noah"_Song-Resume.pdf'
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               class="nes-badge"
             >
               <span class="is-error chinese">历</span>
@@ -63,14 +92,14 @@
           <div class="social-icons">
             <!-- <a
               href="https://www.linkedin.com/in/hanlun"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               rel="noopener"
               aria-label="linkedin"
               ><i class="nes-icon linkedin is-medium"></i
             ></a>
             <a
               href="https://github.com/fnick851"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               rel="noopener"
               aria-label="github"
               ><i class="nes-icon github is-medium"></i
@@ -78,6 +107,7 @@
             <a
               href="mailto:hanlun.song@gmail.com"
               target="_blank"
+              rel="noopener noreferrer"
               rel="noopener"
               aria-label="email"
               ><i class="nes-icon gmail is-medium"></i
@@ -89,33 +119,42 @@
       <section class="nes-container with-title">
         <h3 class="title">Full-time Jobs</h3>
         <div class="lists">
-          <a href="https://www.air.org/" target="_blank"
+          <a
+            href="https://www.air.org/"
+            target="_blank"
+            rel="noopener noreferrer"
             ><button type="button" class="nes-btn is-warning">
               American Institutes for Research
             </button></a
           >
           <ul class="nes-list is-disc">
             <li>
-              <a href="https://research-teams.pcori.org/" target="_blank"
+              <a
+                href="https://research-teams.pcori.org/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   PCORI - Learning Resources for Research Teams
                 </button></a
               >
               <ul class="nes-list is-circle">
                 <li>
-                  <span class="nes-text is-success">Drupal 8, JavaScript</span>
+                  <span class="nes-text">Drupal 8, JavaScript</span>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="https://erlearninglab.org/" target="_blank"
+              <a
+                href="https://erlearninglab.org/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   Economic Resiliency Learning Lab
                 </button></a
               >
               <ul class="nes-list is-circle">
                 <li>
-                  <span class="nes-text is-success">PHP, TailwindCSS</span>
+                  <span class="nes-text">PHP, TailwindCSS</span>
                 </li>
               </ul>
             </li>
@@ -123,6 +162,7 @@
               <a
                 href="https://nces.ed.gov/surveys/talis/talis2018/default.asp"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   TALIS 2018
                 </button></a
@@ -130,6 +170,7 @@
               <a
                 href="https://nces.ed.gov/surveys/icils/icils2018/theme1.asp"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   ICILS 2018
                 </button></a
@@ -137,6 +178,7 @@
               <a
                 href="https://nces.ed.gov/surveys/pisa/pisa2018/"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   PISA 2018
                 </button></a
@@ -144,6 +186,7 @@
               <a
                 href="https://nces.ed.gov/timss/results19/index.asp"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   TIMSS 2019
                 </button></a
@@ -151,12 +194,15 @@
               <ul class="nes-list is-circle">
                 <li>IAP web reports series</li>
                 <li>
-                  <span class="nes-text is-success">Vue, D3, Parcel, ASP</span>
+                  <span class="nes-text">Vue, D3, Parcel, ASP</span>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="https://eteworkspace.airprojects.org/" target="_blank"
+              <a
+                href="https://eteworkspace.airprojects.org/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   Ed Tech Equity Project Workspace
                 </button></a
@@ -164,19 +210,22 @@
               <ul class="nes-list is-circle">
                 <li>A simple content portal for project management</li>
                 <li>
-                  <span class="nes-text is-success">React, ASP.NET</span>
+                  <span class="nes-text">React, ASP.NET</span>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="http://patentsview.org" target="_blank"
+              <a
+                href="http://patentsview.org"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   PatentsView
                 </button></a
               >
               <ul class="nes-list is-circle">
                 <li>
-                  <span class="nes-text is-success"
+                  <span class="nes-text"
                     >TypeScript, React, Backbone, Vue, PHP</span
                   >
                 </li>
@@ -186,6 +235,7 @@
               <a
                 href="https://fnick851.github.io/STEMDataStoryV1/"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   STEM Ver.1
                 </button></a
@@ -193,6 +243,7 @@
               <a
                 href="https://fnick851.github.io/STEMDataStoryV2/"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   STEM Ver.2
                 </button></a
@@ -200,6 +251,7 @@
               <a
                 href="https://www2.ed.gov/datastory/stem/algebra/index.html"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   STEM Ver.3
                 </button></a
@@ -207,6 +259,7 @@
               <a
                 href="https://www2.ed.gov/datastory/cte/index.html"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   CTE
                 </button></a
@@ -214,7 +267,7 @@
               <ul class="nes-list is-circle">
                 <li>U.S. Department of Education's data story series</li>
                 <li>
-                  <span class="nes-text is-success">D3, Vue</span>
+                  <span class="nes-text">D3, Vue</span>
                 </li>
               </ul>
             </li>
@@ -222,39 +275,44 @@
               <a
                 href="https://ies.ed.gov/ncee/edlabs/regions/southwest/default.aspx"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   REL Southwest
                 </button></a
               >
               <ul class="nes-list is-circle">
                 <li>
-                  <span class="nes-text is-success">ASP.NET</span>
+                  <span class="nes-text">ASP.NET</span>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="https://naep-research.airprojects.org/" target="_blank"
+              <a
+                href="https://naep-research.airprojects.org/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   NAEP Research and Development Program
                 </button></a
               >
               <ul class="nes-list is-circle">
                 <li>
-                  <span class="nes-text is-success"
-                    >DotNetNuke, Vue, TailwindCSS, D3</span
-                  >
+                  <span class="nes-text">DotNetNuke, Vue, TailwindCSS, D3</span>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="https://www.calpro-online.org/" target="_blank"
+              <a
+                href="https://www.calpro-online.org/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   CalPro
                 </button></a
               >
               <ul class="nes-list is-circle">
                 <li>
-                  <span class="nes-text is-success">AngularJS, ASP.NET</span>
+                  <span class="nes-text">AngularJS, ASP.NET</span>
                 </li>
               </ul>
             </li>
@@ -262,25 +320,29 @@
               <a
                 href="https://countryindicators.airprojects.org/"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   Country Profiles and Comparison
                 </button></a
               >
               <ul class="nes-list is-circle">
                 <li>
-                  <span class="nes-text is-success">ASP.NET</span>
+                  <span class="nes-text">ASP.NET</span>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="https://powerupwhatworks.org/" target="_blank"
+              <a
+                href="https://powerupwhatworks.org/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   Power Up What Works
                 </button></a
               >
               <ul class="nes-list is-circle">
                 <li>
-                  <span class="nes-text is-success">Drupal 7</span>
+                  <span class="nes-text">Drupal 7</span>
                 </li>
               </ul>
             </li>
@@ -289,13 +351,14 @@
               <a
                 href="https://www.bettermathteachingnetwork.org/"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   Better Math Teaching Network
                 </button></a
               >
               <ul class="nes-list is-circle">
                 <li>
-                  <span class="nes-text is-success">Wordpress</span>
+                  <span class="nes-text">Wordpress</span>
                 </li>
               </ul>
             </li>
@@ -303,35 +366,42 @@
         </div>
 
         <div class="lists">
-          <a href="https://opendataenterprise.org/" target="_blank"
+          <a
+            href="https://opendataenterprise.org/"
+            target="_blank"
+            rel="noopener noreferrer"
             ><button type="button" class="nes-btn is-warning">
               Center for Open Data Enterprise
             </button></a
           >
           <ul class="nes-list is-disc">
             <li>
-              <a href="https://opendataenterprise.org/" target="_blank"
+              <a
+                href="https://opendataenterprise.org/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   CODE Company Website
                 </button></a
               >
               <ul class="nes-list is-circle">
                 <li>
-                  <span class="nes-text is-success">Webflow</span>
+                  <span class="nes-text">Webflow</span>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="https://opendataimpactmap.org/" target="_blank"
+              <a
+                href="https://opendataimpactmap.org/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   Open Data Impact Map
                 </button></a
               >
               <ul class="nes-list is-circle">
                 <li>
-                  <span class="nes-text is-success"
-                    >D3, React, Leaflet, PHP
-                  </span>
+                  <span class="nes-text">D3, React, Leaflet, PHP </span>
                 </li>
               </ul>
             </li>
@@ -346,11 +416,14 @@
             <i class="nes-octocat animate"></i>
             <!-- Balloon -->
             <div class="nes-balloon from-left">
-              <a href="https://metacritic-games.noah-song.com/" target="_blank"
+              <a
+                href="https://metacritic-games.noah-song.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   Best Metacritic Games
                 </button></a
-              ><br />(<span class="nes-text is-success"
+              ><br />(<span class="nes-text"
                 >Next.js, PWA, Serverless Function</span
               >)
             </div>
@@ -359,12 +432,18 @@
           <section class="message -right">
             <!-- Balloon -->
             <div class="nes-balloon from-right">
-              <a href="https://creative-coding.noah-song.com" target="_blank"
+              <a
+                href="https://creative-coding.noah-song.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   Creative Coding
                 </button></a
               >
-              <a href="https://observablehq.com/@fnick851" target="_blank"
+              <a
+                href="https://observablehq.com/@fnick851"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   Observable
                 </button></a
@@ -381,7 +460,7 @@
                 ><button type="button" class="nes-btn is-primary">
                   Blog
                 </button></a
-              ><br />(<span class="nes-text is-success">Hexo</span>)
+              ><br />(<span class="nes-text">Hexo</span>)
             </div>
           </section>
 
@@ -391,6 +470,7 @@
               <a
                 href="https://github.com/fnick851/github-theme-for-chrome"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <button type="button" class="nes-btn is-primary">
                   GitHub Theme for browsers
@@ -408,28 +488,36 @@
               <a
                 href="https://www.theatlantic.com/sponsored/siemens-2019/pollution-personal/3112/"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   Pollution is Personal
                 </button></a
-              ><br />(<span class="nes-text is-success"
-                >Vue, Leaflet, Webpack</span
-              >)
+              ><br />(<span class="nes-text">Vue, Leaflet, Webpack</span>)
               <br />
               with
-              <a href="https://city78.org/" target="_blank"
+              <a
+                href="https://city78.org/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-warning">
                   City78
                 </button></a
               >
               <br />
               for
-              <a href="https://www.citylab.com/" target="_blank"
+              <a
+                href="https://www.citylab.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-warning">
                   CityLab
                 </button></a
               >
               and
-              <a href="https://www.theatlantic.com/" target="_blank"
+              <a
+                href="https://www.theatlantic.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-warning">
                   The Atlantic
                 </button></a
@@ -443,10 +531,11 @@
               <a
                 href="https://fnick851.github.io/ilcsi-dashboard-concept/"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   Illinois CSI Dashboard Prototype
                 </button></a
-              ><br />(<span class="nes-text is-success">D3, Bootstrap</span>)
+              ><br />(<span class="nes-text">D3, Bootstrap</span>)
             </div>
             <i class="nes-octocat animate"></i>
           </section>
@@ -455,11 +544,14 @@
             <i class="nes-octocat animate"></i>
             <!-- Balloon -->
             <div class="nes-balloon from-left">
-              <a href="https://fnick851.github.io/toys//" target="_blank"
+              <a
+                href="https://fnick851.github.io/toys//"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   Little Web Toys
                 </button></a
-              ><br />(<span class="nes-text is-success">Vue, TailwindCSS</span>)
+              ><br />(<span class="nes-text">Vue, TailwindCSS</span>)
             </div>
           </section>
 
@@ -469,10 +561,11 @@
               <a
                 href="https://fnick851.github.io/frozen-yogurt-hunt/"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   Cherry and Yogurt Hunt
                 </button></a
-              ><br />(<span class="nes-text is-success">CreateJS</span>)
+              ><br />(<span class="nes-text">CreateJS</span>)
             </div>
             <i class="nes-octocat animate"></i>
           </section>
@@ -484,12 +577,11 @@
               <a
                 href="https://fnick851.github.io/napcs-concept/"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><button type="button" class="nes-btn is-primary">
                   NAPCS Dashboard Prototype
                 </button></a
-              ><br />(<span class="nes-text is-success"
-                >D3, Leaflet, jQuery</span
-              >)
+              ><br />(<span class="nes-text">D3, Leaflet, jQuery</span>)
             </div>
           </section>
         </section>
