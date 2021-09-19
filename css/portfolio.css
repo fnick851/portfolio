@@ -95,6 +95,15 @@ body {
   font-size: 13px;
 }
 
+.nes-balloon {
+  background-color: unset;
+}
+
+.nes-container.with-title > .title {
+  margin: -1rem 0 2rem 0;
+  background-color: unset;
+}
+
 @media (max-width: 450px) {
   .social-icons {
     display: block;
