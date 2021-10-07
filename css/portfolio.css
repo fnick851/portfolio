@@ -124,3 +124,21 @@ body {
     margin-left: 0;
   }
 }
+
+.nes-balloon.from-right::before {
+  background-color: unset;
+}
+
+.nes-balloon.from-right::after {
+  background-color: unset;
+  box-shadow: -4px 0, 4px 0, 4px 4px black, 0 4px, 8px 4px, 4px 8px, 8px 8px;
+}
+
+.nes-balloon.from-left::before {
+  background-color: unset;
+}
+
+.nes-balloon.from-left::after {
+  background-color: unset;
+  box-shadow: -4px 0, 4px 0, -4px 4px black, 0 4px, -8px 4px, -4px 8px, -8px 8px;
+}
