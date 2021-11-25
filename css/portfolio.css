@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Zpix";
+  src: url("../font/Zpix.ttf");
+  font-display: swap;
+}
+
 body {
   padding: 10px;
 }
@@ -8,12 +14,6 @@ body {
 
 .nes-btn.is-primary {
   color: black;
-}
-
-@font-face {
-  font-family: "Zpix";
-  src: url("../font/Zpix.ttf");
-  font-display: swap;
 }
 
 .chinese {
@@ -104,6 +104,31 @@ body {
   background-color: unset;
 }
 
+.nes-balloon.from-right::before {
+  background-color: unset;
+}
+
+.nes-balloon.from-right::after {
+  background-color: unset;
+  box-shadow: -4px 0, 4px 0, 4px 4px black, 0 4px, 8px 4px, 4px 8px, 8px 8px;
+}
+
+.nes-balloon.from-left::before {
+  background-color: unset;
+}
+
+.nes-balloon.from-left::after {
+  background-color: unset;
+  box-shadow: -4px 0, 4px 0, -4px 4px black, 0 4px, -8px 4px, -4px 8px, -8px 8px;
+}
+
+.message {
+  display: flex;
+  align-items: end;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
 @media (max-width: 450px) {
   .social-icons {
     display: block;
@@ -123,22 +148,4 @@ body {
   .member-card > .profile {
     margin-left: 0;
   }
-}
-
-.nes-balloon.from-right::before {
-  background-color: unset;
-}
-
-.nes-balloon.from-right::after {
-  background-color: unset;
-  box-shadow: -4px 0, 4px 0, 4px 4px black, 0 4px, 8px 4px, 4px 8px, 8px 8px;
-}
-
-.nes-balloon.from-left::before {
-  background-color: unset;
-}
-
-.nes-balloon.from-left::after {
-  background-color: unset;
-  box-shadow: -4px 0, 4px 0, -4px 4px black, 0 4px, -8px 4px, -4px 8px, -8px 8px;
 }
