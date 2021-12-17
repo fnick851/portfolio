@@ -8,44 +8,10 @@ body {
   padding: 10px;
 }
 
-.nes-btn {
-  margin-bottom: 10px;
-}
-
-.nes-btn.is-primary {
-  color: black;
-}
-
-.chinese {
-  font-family: "Zpix";
-}
-
-.nes-container.member-card {
-  display: flex;
-  padding: 1rem 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.member-card > .profile {
-  margin-left: 1.5rem;
-}
-
 .head-photo {
   width: 140px;
   height: 140px;
   image-rendering: pixelated;
-}
-
-.section-lead {
-  margin-bottom: 20px;
-}
-
-.nes-container {
-  margin-bottom: 2rem !important;
-}
-
-.nes-container.is-rounded {
-  margin: 0;
 }
 
 .weibo-img {
@@ -53,74 +19,13 @@ body {
   margin-bottom: 20px;
 }
 
-.nes-list li {
-  margin: 15px 0;
-}
-
-.nes-btn.is-warning {
-  color: black;
+.chinese {
+  font-family: "Zpix";
 }
 
 .container {
   max-width: 1024px;
   margin: auto;
-}
-
-.nes-list.is-disc li::before {
-  top: 18px;
-  left: -25px;
-}
-
-.nes-list.is-circle li::before {
-  top: 3px;
-}
-
-.social-icons {
-  padding-top: 4px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.me {
-  display: flex;
-  gap: 5px;
-}
-
-.me .nes-badge {
-  width: 20px;
-}
-
-.me .nes-badge span {
-  font-size: 13px;
-}
-
-.nes-balloon {
-  background-color: unset;
-  margin-bottom: 22px;
-}
-
-.nes-container.with-title > .title {
-  margin: -1rem 0 2rem 0;
-  background-color: unset;
-}
-
-.nes-balloon.from-right::before {
-  background-color: unset;
-}
-
-.nes-balloon.from-right::after {
-  background-color: unset;
-  box-shadow: -4px 0, 4px 0, 4px 4px black, 0 4px, 8px 4px, 4px 8px, 8px 8px;
-}
-
-.nes-balloon.from-left::before {
-  background-color: unset;
-}
-
-.nes-balloon.from-left::after {
-  background-color: unset;
-  box-shadow: -4px 0, 4px 0, -4px 4px black, 0 4px, -8px 4px, -4px 8px, -8px 8px;
 }
 
 .message {
@@ -130,6 +35,33 @@ body {
   gap: 20px;
 }
 
+.section-lead {
+  margin-bottom: 20px;
+}
+
+.member-card > .profile {
+  margin-left: 1.5rem;
+}
+@media (max-width: 375px) {
+  .member-card > .profile {
+    margin-left: 0;
+  }
+}
+
+.social-icons {
+  padding-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media (max-width: 450px) {
+  .social-icons {
+    display: block;
+  }
+  .social-icons .nes-badge {
+    margin-top: 20px;
+  }
+}
 @media (max-width: 450px) {
   .social-icons {
     display: block;
@@ -139,10 +71,85 @@ body {
   }
 }
 
+.nes-btn {
+  margin-bottom: 10px;
+}
+.nes-btn.is-primary {
+  color: black;
+}
+.nes-btn.is-warning {
+  color: black;
+}
+
+.nes-container {
+  margin-bottom: 2rem !important;
+}
+.nes-container.is-rounded {
+  margin: 0;
+}
+.nes-container.member-card {
+  display: flex;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+}
+.nes-container.with-title > .title {
+  margin: -1rem 0 2rem 0;
+  background-color: unset;
+}
 @media (max-width: 375px) {
   .nes-container.member-card {
     display: block;
   }
+}
+
+.nes-list li {
+  margin: 15px 0;
+}
+.nes-list.is-disc li::before {
+  top: 18px;
+  left: -25px;
+}
+.nes-list.is-circle li::before {
+  top: 3px;
+}
+
+.me {
+  display: flex;
+  gap: 5px;
+}
+.me .nes-badge {
+  width: 20px;
+}
+.me .nes-badge span {
+  font-size: 13px;
+}
+
+.nes-balloon {
+  background-color: unset;
+  margin-bottom: 22px;
+}
+.nes-balloon.from-right::before {
+  background-color: unset;
+}
+.nes-balloon.from-right::after {
+  background-color: unset;
+  box-shadow: -4px 0, 4px 0, 4px 4px black, 0 4px, 8px 4px, 4px 8px, 8px 8px;
+}
+.nes-balloon.from-left::before {
+  background-color: unset;
+}
+.nes-balloon.from-left::after {
+  background-color: unset;
+  box-shadow: -4px 0, 4px 0, -4px 4px black, 0 4px, -8px 4px, -4px 8px, -8px 8px;
+}
+
+@media (max-width: 580px) {
+  .nes-octocat {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
   .avatar {
     margin-bottom: 10px;
   }
