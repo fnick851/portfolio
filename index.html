@@ -1,21 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-104425505-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-104425505-1");
-    </script>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
       content='The portfolio page of Hanlun "Noah" Song.'
@@ -23,40 +10,23 @@
     <title>(Noah) Hanlun Song - Portfolio</title>
     <link rel="shortcut icon" href="./img/head-sketch.jpg" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      as="style"
-      onLoad="this.onload=null;this.rel='stylesheet'"
+      href="./font/press-start-2p-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      />
-    </noscript>
+    <link
+      rel="preload"
+      href="./font/zpix-subset.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
 
-    <link
-      rel="preload"
-      href="../css/nes.min.css"
-      as="style"
-      onLoad="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript>
-      <link rel="stylesheet" href="../css/nes.min.css" />
-    </noscript>
-
-    <link
-      rel="preload"
-      href="../css/portfolio.css"
-      as="style"
-      onLoad="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript>
-      <link rel="stylesheet" href="../css/portfolio.css" />
-    </noscript>
+    <link rel="stylesheet" href="./css/nes.min.css" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
   </head>
 
   <body>
@@ -68,6 +38,8 @@
               alt="Hanlun Song"
               class="head-photo"
               src="./img/head-sketch.jpg"
+              width="140"
+              height="140"
             />
           </a>
         </div>
@@ -103,7 +75,6 @@
               href="mailto:hanlun.song@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              rel="noopener"
               aria-label="email"
               ><i class="nes-icon gmail is-medium"></i
             ></a>
