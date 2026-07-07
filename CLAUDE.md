@@ -1,10 +1,16 @@
 # Personal portfolio (Noah Song)
 
-Static site: one `index.html` plus vendored `css/`, `font/`, `img/`. No build step, no JS framework, no third-party requests, no analytics. Deployed at a domain root (not GitHub Pages), so keep asset paths relative like `./css/...`.
+Static site: one `index.html` plus vendored `css/`, `font/`, `img/`. No build step, no JS framework, no third-party requests, no analytics. Deployed at https://portfolio.noah-song.com/ (domain root, not GitHub Pages) — keep asset paths relative like `./css/...`; if the domain ever changes, the canonical and `og:*` URLs in `index.html` must change with it.
+
+Owner's standing requirements: good engineering practice with zero tolerance for rot (dead links, dead code, outdated dependencies), and long-term durability as a public showcase. Prefer boring, durable choices over trendy ones.
 
 ## css/nes.min.css is a build artifact — do not hand-edit
 
 It is built from my NES.css fork at `~/workspace/others/NES.css` (github.com/fnick851/NES.css, branch `develop`); the file header carries the fork version stamp. To change framework styles: edit the fork's `scss/`, run `npm run build` there, copy its `css/nes.min.css` over this one, and visually verify. Site-specific styles belong in `css/portfolio.css`.
+
+## Adding entries
+
+Entry buttons are anchors styled by NES.css: `<a class="nes-btn is-success" href="..." target="_blank" rel="noopener noreferrer">Label</a>`. Never nest a `<button>` inside an `<a>` — that older pattern was removed in July 2026 (invalid HTML, double tab stops).
 
 ## Performance invariants
 
