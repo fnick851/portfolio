@@ -96,6 +96,10 @@ body {
 .nes-btn.is-warning {
   color: black;
 }
+/* white on NES green is 1.9:1 contrast; black is 8:1 */
+.nes-btn.is-success {
+  color: black;
+}
 
 .nes-container {
   margin-bottom: 2rem !important;
