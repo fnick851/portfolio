@@ -2,7 +2,7 @@
 
 Static site: one `index.html` plus vendored `css/`, `font/`, `img/`. No build step, no JS framework, no third-party requests, no analytics. Deployed at https://portfolio.noah-song.com/ (domain root, not GitHub Pages) — keep asset paths relative like `./css/...`; if the domain ever changes, the canonical and `og:*` URLs in `index.html` must change with it.
 
-Owner's standing requirements: good engineering practice with zero tolerance for rot (dead links, dead code, outdated dependencies), and long-term durability as a public showcase. Prefer boring, durable choices over trendy ones.
+Owner's standing requirements: good engineering practice with zero tolerance for rot (dead links, dead code, outdated dependencies), and long-term durability as a public showcase. Prefer boring, durable choices over trendy ones. The project must stay maintainable by less capable AI models: keep conventions explicit in this file (always with the *why*), keep invariants executable in `./check.sh`, and when you add or change an invariant, update both.
 
 ## css/nes.min.css is a build artifact — do not hand-edit
 
@@ -25,4 +25,5 @@ Some entries deliberately point at Wayback Machine snapshots because the live pr
 
 ## Verifying changes
 
-Serve from the repo root (`python3 -m http.server 8931`) and check in a browser: styled first paint with no flash, 宋汉仑 rendered in the Zpix pixel font, balloons/buttons/containers showing solid pixel borders.
+1. Run `./check.sh` — it mechanically enforces the invariants above (no nested buttons, render-blocking CSS, assets exist, fork-stamped nes.min.css, https-only, no duplicate attributes, canonical/og URL). It must pass before any commit.
+2. Serve from the repo root (`python3 -m http.server 8931`) and check in a browser: styled first paint with no flash, 宋汉仑 rendered in the Zpix pixel font, balloons/buttons/containers showing solid pixel borders.
