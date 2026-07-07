@@ -116,6 +116,14 @@ body {
   margin: -1rem 0 2rem 0;
   background-color: unset;
 }
+.title-icon {
+  /* 2em = 2x the 16px icon grid: integer scaling keeps the pixel art crisp */
+  width: 2em;
+  height: 2em;
+  margin-right: 8px;
+  vertical-align: -0.55em;
+  shape-rendering: crispedges;
+}
 @media (max-width: 375px) {
   .nes-container.member-card {
     display: block;

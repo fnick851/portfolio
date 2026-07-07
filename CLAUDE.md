@@ -12,6 +12,15 @@ It is built from my NES.css fork at `~/workspace/others/NES.css` (github.com/fni
 
 Entry buttons are anchors styled by NES.css: `<a class="nes-btn is-success" href="..." target="_blank" rel="noopener noreferrer">Label</a>`. Never nest a `<button>` inside an `<a>` — that older pattern was removed in July 2026 (invalid HTML, double tab stops).
 
+## Icons
+
+Decorative pixel icons (section titles, footer heart) come from two places, both already vendored — never add an icon font or icon CDN:
+
+- One-off icons are inlined `<svg class="title-icon" ... fill="currentColor">` single-path conversions from my NES.icons fork at `~/workspace/others/NES.icons` — that repo's CLAUDE.md has the 3-step recipe (`scripts/svg-to-path.py`).
+- Social icons (e.g. the gmail link) are NES.css built-ins (`<i class="nes-icon gmail"></i>`), already in `css/nes.min.css`.
+
+Use icons sparingly and only where they mean something (a trophy for experiences, a controller for projects) — purely decorative icons don't belong here; a proposed footer heart was rejected for exactly that reason.
+
 ## Performance invariants
 
 - Stylesheets are render-blocking `<link rel="stylesheet">` on purpose — all CSS here is critical. Do not reintroduce async CSS loading (`rel="preload"` + onload swap); that caused the unstyled-flash/CLS problem removed in July 2026.
